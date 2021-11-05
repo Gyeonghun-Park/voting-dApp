@@ -108,9 +108,16 @@ web3.eth.getAccounts().then((f) => {
 });
 
 const contract = new web3.eth.Contract(abi);
-contract.options.address = '0xb9AF57850b9718df644F661ff2F77Db74043fF0C';
+contract.options.address = '0x61651d0C7d60Df4AA0016c2e147e656C5a763AC3';
 
-candidates = { Rama: 'candidate-1', Nick: 'candidate-2', Jose: 'candidate-3' };
+candidates = {
+  Rama: 'candidate-1',
+  Nick: 'candidate-2',
+  Jose: 'candidate-3',
+  Potato: 'candidate-4',
+  Jay: 'candidate-5',
+  Gyeonghun: 'candidate-6',
+};
 
 function voteForCandidate(candidate) {
   candidateName = $('#candidate').val();
